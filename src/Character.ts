@@ -88,7 +88,7 @@ export default class Character implements Fighter {
   }
 
   special(enemy: SimpleFighter): void {
-    const turbo = getRandomInt(1, 10);
+    const turbo = getRandomInt(10, 100);
     enemy.receiveDamage(this._strength + turbo);
   }
 }
